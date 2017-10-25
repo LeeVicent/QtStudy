@@ -1,13 +1,5 @@
 #include "widgets/buttons.h"
-
-
-//类外定义需要获得完整类！！
-#include <QPushButton>
-#include <QRadioButton>
-#include <QGridLayout>
-#include <QToolButton>
-#include <QCheckBox>
-
+#include "..\stdafx.h"
 
 Buttons::Buttons(QWidget *parent):QDialog(parent)//父窗口，基类指针，默认值
 {
@@ -16,14 +8,23 @@ Buttons::Buttons(QWidget *parent):QDialog(parent)//父窗口，基类指针，�
     radioButton = new QRadioButton(tr("QRadioButton"));
     toolButton = new QToolButton();
     checkBox = new QCheckBox();
+	toolButtonLabel = new QLabel(tr("QToolButton"));
+	checkBoxLabel = new QLabel(tr("QCheckBox"));
 
-    QGridLayout *gridLayout = new QGridLayout;
-    gridLayout->addWidget(pushButton);
-    gridLayout->addWidget(radioButton);
-    gridLayout->addWidget(toolButton);
-    gridLayout->addWidget(checkBox);
+	QHBoxLayout *layout1 = new QHBoxLayout;
+	layout1->addWidget(toolButton);
+	layout1->addWidget(toolButtonLabel);
 
-    this->setLayout(gridLayout);
+	QHBoxLayout *layout2 = new QHBoxLayout;
+	layout2->addWidget(checkBox);
+	layout2->addWidget(checkBoxLabel);
+
+    QVBoxLayout *VLayout = new QVBoxLayout;
+	VLayout->addWidget(pushButton);
+	VLayout->addWidget(radioButton);
+	VLayout->addLayout(layout1);
+	VLayout->addLayout(layout2);
+    this->setLayout(VLayout);
 }
 
 Buttons::~Buttons()
