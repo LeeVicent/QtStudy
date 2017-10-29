@@ -1,10 +1,9 @@
 #ifndef SPREADSHEET_H
 #define SPREADSHEET_H
 
-#include <QtWidgets/QMainWindow>
-#include "ui_spreadsheet.h"
+#include <QTableWidget>
 
-class Spreadsheet : public QMainWindow
+class Spreadsheet : public QTableWidget
 {
 	Q_OBJECT
 
@@ -13,7 +12,7 @@ public:
 	~Spreadsheet();
 
 private:
-	Ui::SpreadsheetClass ui;
+
 };
 
 #endif // SPREADSHEET_H

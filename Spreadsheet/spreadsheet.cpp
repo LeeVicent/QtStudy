@@ -1,9 +1,8 @@
 #include "spreadsheet.h"
 
-Spreadsheet::Spreadsheet(QWidget *parent)
-	: QMainWindow(parent)
+Spreadsheet::Spreadsheet(QWidget *parent) : QTableWidget(parent)
 {
-	ui.setupUi(this);
+
 }
 
 Spreadsheet::~Spreadsheet()
