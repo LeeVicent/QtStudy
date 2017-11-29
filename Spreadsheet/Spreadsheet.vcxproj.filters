@@ -33,19 +33,16 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Header Files\spreadsheet">
+      <UniqueIdentifier>{cbb536f9-315b-41bc-97f0-b9edcec87122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\spreadsheet">
+      <UniqueIdentifier>{444f3c92-79fa-4be9-8690-c5577d4128ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="spreadsheet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_spreadsheet.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_spreadsheet.cpp">
-      <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_spreadsheet.cpp">
       <Filter>Generated Files</Filter>
@@ -86,11 +83,20 @@
     <ClCompile Include="mytitlebar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="spreadsheet\spreadsheet.cpp">
+      <Filter>Source Files\spreadsheet</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_spreadsheet.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_spreadsheet.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="spreadsheet\cell.cpp">
+      <Filter>Source Files\spreadsheet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="spreadsheet.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="spreadsheet.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
@@ -105,6 +111,12 @@
     </CustomBuild>
     <CustomBuild Include="mytitlebar.h">
       <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="spreadsheet\spreadsheet.h">
+      <Filter>Header Files\spreadsheet</Filter>
+    </CustomBuild>
+    <CustomBuild Include="spreadsheet\cell.h">
+      <Filter>Header Files\spreadsheet</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

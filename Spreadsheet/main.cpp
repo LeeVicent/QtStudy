@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "spreadsheet.h"
+#include "spreadsheet/spreadsheet.h"
 #include <QApplication>
 #include <QTableWidget>
 
@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
 	MainWindow m;
 	m.show();
 
-	/*Spreadsheet s;
-	s.show();*/
+	Spreadsheet s;
+	s.show();
 	//QTableWidget q;
 	//q.show();
 

@@ -1,6 +1,8 @@
 #include "mainwindow.h"
-#include "spreadsheet.h"
+#include "spreadsheet\spreadsheet.h"
 #include "stdafx.h"
+#include <QColorDialog>
+
 
 //菜单选项添加
 #define CREATE_ACTION(objectName, diaplayName, icon, shortcut, slot)\
@@ -49,8 +51,10 @@ bool MainWindow::loadFile(const QString & fileName)
 //public:
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
-	spreadsheet = new Spreadsheet;
-	setCentralWidget(spreadsheet);
+	/*spreadsheet = new Spreadsheet;
+	setCentralWidget(spreadsheet);*/
+	QColorDialog *q = new QColorDialog;
+	setCentralWidget(q);
 
 	createActions();
 	createMenus();

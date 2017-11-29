@@ -34,6 +34,7 @@ private:
 	//±à¼­(E)
 	A(cut); A(copy); A(paste); A(delete); A(select); A(find);
 
+
 	Spreadsheet *spreadsheet;
 	FindDialog *findDialog;
 
