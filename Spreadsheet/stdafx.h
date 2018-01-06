@@ -40,7 +40,7 @@
 //QMessageºêº¯Êý²âÊÔÊä³ö
 #define QMB(string) \
 {\
-	QMessageBox *m = new QMessageBox(QMessageBox::NoIcon, "²âÊÔ",  (string));\
+	QMessageBox *m = new QMessageBox(QMessageBox::NoIcon, "Result",  (string));\
 	m->setIconPixmap(QPixmap(":/Resources/experiment.png"));\
    m->show();\
 }

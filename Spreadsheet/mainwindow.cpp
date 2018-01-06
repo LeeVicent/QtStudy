@@ -77,7 +77,7 @@ MainWindow::~MainWindow()
 //private slots:
 void MainWindow::newFile()
 {
-	QMB("heh");
+	QMB("You Win!!");
 }
 
 void MainWindow::openFile()
